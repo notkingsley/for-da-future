@@ -1,2 +1,2 @@
-# float-range-function
-A python function that generates float numbers in a specified range
+# float-range
+A python script that generates float numbers in a specified range
