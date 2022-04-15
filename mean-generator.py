@@ -20,8 +20,9 @@ def value_generator(start, stop, step):
     :return:
     """
 
-    f = 10 ** (len(str(step)) - str(step).find('.') - 1)
-    rf = list(range(int(start * f), int(stop * f), int(step * f)))
+    #f = 10 ** (len(str(step)) - str(step).find('.') - 1)
+    f = step**-1
+    rf = range(int(start * f), int(stop * f), int(step * f))
     r = [i / f for i in rf]
 
     return r
