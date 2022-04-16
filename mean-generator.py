@@ -54,7 +54,7 @@ def mean_generator(mean, std, restrictions):
     final_values = random.sample(list(selection), 4)
 
     #   Ensure Mean Accuracy with Percentage Error Of 2%
-    if st.fmean(final_values) in value_generator(mean - 0.02, mean + 0.02, .001):
+    if st.fmean(final_values) in value_generator(mean * 0.98, mean * 1.02, .001):
         return final_values
     else:
         mean_generator(mean, std, restrictions)
